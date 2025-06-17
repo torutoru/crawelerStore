@@ -95,8 +95,8 @@ app.get('/crawler-stock-change-info', async (req, res) => {
     return res.send();
 });
 
-app.get('/test', async (req, res) => {
-    await crawlerStoreUsingFile();
+app.get('/start', async (req, res) => {
+    crawlerStoreUsingFile();
     return res.send('ok');
 });
 
