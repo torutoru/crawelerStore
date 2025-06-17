@@ -100,6 +100,10 @@ app.get('/start', async (req, res) => {
     return res.send('ok');
 });
 
+app.get('/wakeup', async (req, res) => {
+    return res.send('ok');
+});
+
 app.get('/store_info', async (req, res) => {
     console.log(req.query.date);
     await crawlerStoreInfo(req.query.date);
